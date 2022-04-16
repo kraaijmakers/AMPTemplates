@@ -1,0 +1,225 @@
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "Server Properties",
+        "Description": "Server Name as shown in the Minecraft server browser.",
+        "Keywords": "server name",
+        "FieldName": "server-name",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "server-name",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Powered by AMP!",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Gamemode",
+        "Category": "Server Properties",
+        "Description": "Gamemode value can either be 'survival' 'creative' or 'adventure' ",
+        "Keywords": "mode gamemode survival creative adventure",
+        "FieldName": "gamemode",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "gamemode",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "survival",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Difficulty",
+        "Category": "Server Properties",
+        "Description": "Sets the difficulty of the world. Allowed values: \"peaceful\", \"easy\", \"normal\", or \"hard\"",
+        "Keywords": "difficulty peaceful easy normal hard",
+        "FieldName": "difficulty",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "difficulty",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "normal",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Allow Cheats",
+        "Category": "Server Properties",
+        "Description": "Allow cheats",
+        "Keywords": "allow cheats",
+        "FieldName": "allow-cheats",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "allow-cheats",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Force Gamemode",
+        "Category": "Server Properties",
+        "Description": "Force gamemode",
+        "Keywords": "gamemode mode force",
+        "FieldName": "force-gamemode",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "force-gamemode",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Online mode",
+        "Category": "Server Properties",
+        "Description": "Verify user account status with Xbox Live",
+        "Keywords": "online mode",
+        "FieldName": "online-mode",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "online-mode",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Max Players",
+        "Category": "Server Properties",
+        "Description": "Maximum amount of players",
+        "Keywords": "max players maximum player limit",
+        "FieldName": "max-players",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "max-players",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "10",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Allow List",
+        "Category": "Server Properties",
+        "Description": "If the allowlist will be into affect",
+        "Keywords": "allow list white whitelist allowlist",
+        "FieldName": "allow-list",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "allow-list",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "View Distance",
+        "Category": "Server Properties",
+        "Description": "The distance a player can see",
+        "Keywords": "view distance",
+        "FieldName": "view-distance",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "view-distance",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "32",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Tick Distance",
+        "Category": "Server Properties",
+        "Description": "The distance how far around a player the world is simulated",
+        "Keywords": "tick simulation distance",
+        "FieldName": "tick-distance",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "tick-distance",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "4",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Player Idle Timeout",
+        "Category": "Server Properties",
+        "Description": "Value is in minutes when the player times out",
+        "Keywords": "time out idle timeout player",
+        "FieldName": "player-idle-timeout",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "player-idle-timeout",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "10",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Level Name",
+        "Category": "Server Properties",
+        "Description": "The name of the world save.",
+        "Keywords": "save world level name",
+        "FieldName": "level-name",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "level-name",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Bedrock level",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Level Seed",
+        "Category": "Server Properties",
+        "Description": "The seed the world will be generated upon",
+        "Keywords": "seed level",
+        "FieldName": "level-seed",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "level-seed",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Default Player Permission level",
+        "Category": "Server Properties",
+        "Description": "The level a first joined player starts at. Can be \"visitor\", \"member\", \"operator\"",
+        "Keywords": "default player permission level visitor member operator ",
+        "FieldName": "default-player-permission-level",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "default-player-permission-level",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "member",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Texture Pack Required",
+        "Category": "Server Properties",
+        "Description": "Is a texture pack required to play on this server",
+        "Keywords": "",
+        "FieldName": "texturepack-required",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "texturepack-required",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Max Threads",
+        "Category": "Server Properties",
+        "Description": "The maximum amount of threads allowed",
+        "Keywords": "max threads limit cpu",
+        "FieldName": "max-threads",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "max-threads",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "8",
+        "EnumValues": {}
+    }
+]
