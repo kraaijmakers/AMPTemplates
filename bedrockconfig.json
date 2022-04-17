@@ -15,28 +15,37 @@
     {
         "DisplayName": "Gamemode",
         "Category": "Server Properties",
-        "Description": "Gamemode value can either be 'survival' 'creative' or 'adventure' ",
+        "Description": "Gamemode type, either survival, creative or adventure",
         "Keywords": "mode gamemode survival creative adventure",
         "FieldName": "gamemode",
-        "InputType": "text",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "gamemode",
         "IncludeInCommandLine": false,
         "DefaultValue": "survival",
-        "EnumValues": {}
+        "EnumValues": {
+            "survival": "Survival",
+            "creative": "Creative",
+            "adventure": "Adventure"
+        }
     },
     {
         "DisplayName": "Difficulty",
         "Category": "Server Properties",
-        "Description": "Sets the difficulty of the world. Allowed values: \"peaceful\", \"easy\", \"normal\", or \"hard\"",
+        "Description": "Sets the difficulty of the world. ",
         "Keywords": "difficulty peaceful easy normal hard",
         "FieldName": "difficulty",
-        "InputType": "text",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "difficulty",
         "IncludeInCommandLine": false,
         "DefaultValue": "normal",
-        "EnumValues": {}
+        "EnumValues": {
+            "peaceful": "Peaceful",
+            "easy": "Easy",
+            "normal": "Normal",
+            "hard": "Hard"
+        }
     },
     {
         "DisplayName": "Allow Cheats",
@@ -183,15 +192,19 @@
     {
         "DisplayName": "Default Player Permission level",
         "Category": "Server Properties",
-        "Description": "The level a first joined player starts at. Can be \"visitor\", \"member\", \"operator\"",
+        "Description": "The level a new joining player starts with.",
         "Keywords": "default player permission level visitor member operator ",
         "FieldName": "default-player-permission-level",
-        "InputType": "text",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName": "default-player-permission-level",
         "IncludeInCommandLine": false,
         "DefaultValue": "member",
-        "EnumValues": {}
+        "EnumValues": {
+            "visitor": "Visitor",
+            "member": "Member",
+            "operator": "Operator"
+        }
     },
     {
         "DisplayName": "Texture Pack Required",
