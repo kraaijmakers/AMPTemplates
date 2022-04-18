@@ -2,20 +2,20 @@
     {
         "DisplayName": "Server Name",
         "Category": "Server Properties",
-        "Description": "Server Name as shown in the Minecraft server browser.",
+        "Description": "Used as the server name Allowed values: Any string without semicolon symbol.",
         "Keywords": "server name",
         "FieldName": "server-name",
         "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "server-name",
         "IncludeInCommandLine": false,
-        "DefaultValue": "Powered by AMP!",
+        "DefaultValue": "Dedicated Server",
         "EnumValues": {}
     },
     {
         "DisplayName": "Gamemode",
         "Category": "Server Properties",
-        "Description": "Gamemode type, either survival, creative or adventure",
+        "Description": "Sets the game mode for new players.",
         "Keywords": "mode gamemode survival creative adventure",
         "FieldName": "gamemode",
         "InputType": "enum",
@@ -39,7 +39,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "difficulty",
         "IncludeInCommandLine": false,
-        "DefaultValue": "normal",
+        "DefaultValue": "easy",
         "EnumValues": {
             "peaceful": "Peaceful",
             "easy": "Easy",
@@ -50,7 +50,7 @@
     {
         "DisplayName": "Allow Cheats",
         "Category": "Server Properties",
-        "Description": "Allow cheats",
+        "Description": "If true then cheats like commands can be used.",
         "Keywords": "allow cheats",
         "FieldName": "allow-cheats",
         "InputType": "checkbox",
@@ -66,14 +66,14 @@
     {
         "DisplayName": "Force Gamemode",
         "Category": "Server Properties",
-        "Description": "Force gamemode",
+        "Description": "force-gamemode=false (or force-gamemode  is not defined in the server.properties) prevents the server from sending to the client gamemode values other than the gamemode value saved by the server during world creation even if those values are set in server.properties after world creation. force-gamemode=true forces the server to send to the client gamemode values other than the gamemode value saved by the server during world creation if those values are set in server.properties after world creation.",
         "Keywords": "gamemode mode force",
         "FieldName": "force-gamemode",
         "InputType": "checkbox",
         "IsFlagArgument": false,
         "ParamFieldName": "force-gamemode",
         "IncludeInCommandLine": false,
-        "DefaultValue": "true",
+        "DefaultValue": "false",
         "EnumValues": {
             "true": "True",
             "false": "False"
@@ -82,7 +82,7 @@
     {
         "DisplayName": "Online mode",
         "Category": "Server Properties",
-        "Description": "Verify user account status with Xbox Live",
+        "Description": "If true then all connected players must be authenticated to Xbox Live. Clients connecting to remote (non-LAN) servers will always require Xbox Live authentication regardless of this setting. If the server accepts connections from the Internet, then it's highly recommended to enable online-mode.",
         "Keywords": "online mode",
         "FieldName": "online-mode",
         "InputType": "checkbox",
@@ -98,7 +98,7 @@
     {
         "DisplayName": "Max Players",
         "Category": "Server Properties",
-        "Description": "Maximum amount of players",
+        "Description": "The maximum number of players that can play on the server. Allowed values: Any positive integer",
         "Keywords": "max players maximum player limit",
         "FieldName": "max-players",
         "InputType": "number",
@@ -111,7 +111,7 @@
     {
         "DisplayName": "Allow List",
         "Category": "Server Properties",
-        "Description": "If the allowlist will be into affect",
+        "Description":  "If true then all connected players must be listed in the separate allowlist.json file.",
         "Keywords": "allow list white whitelist allowlist",
         "FieldName": "allow-list",
         "InputType": "checkbox",
@@ -127,7 +127,7 @@
     {
         "DisplayName": "View Distance",
         "Category": "Server Properties",
-        "Description": "The distance a player can see",
+        "Description": "The maximum allowed view distance in number of chunks. Allowed values: Positive integer equal to 5 or greater.",
         "Keywords": "view distance",
         "FieldName": "view-distance",
         "InputType": "number",
@@ -140,7 +140,7 @@
     {
         "DisplayName": "Tick Distance",
         "Category": "Server Properties",
-        "Description": "The distance how far around a player the world is simulated",
+        "Description": " The world will be ticked this many chunks away from any player. Allowed values: Integers in the range [4, 12]",
         "Keywords": "tick simulation distance",
         "FieldName": "tick-distance",
         "InputType": "number",
@@ -153,20 +153,20 @@
     {
         "DisplayName": "Player Idle Timeout",
         "Category": "Server Properties",
-        "Description": "Value is in minutes when the player times out",
+        "Description": "After a player has idled for this many minutes they will be kicked. If set to 0 then players can idle indefinitely. Allowed values: Any non-negative integer.",
         "Keywords": "time out idle timeout player",
         "FieldName": "player-idle-timeout",
         "InputType": "number",
         "IsFlagArgument": false,
         "ParamFieldName": "player-idle-timeout",
         "IncludeInCommandLine": false,
-        "DefaultValue": "10",
+        "DefaultValue": "30",
         "EnumValues": {}
     },
     {
         "DisplayName": "Level Name",
         "Category": "Server Properties",
-        "Description": "The name of the world save.",
+        "Description": "Allowed values: Any string without semicolon symbol or symbols illegal for file name: /\n\r\t\f`?*\\<>|\"",
         "Keywords": "save world level name",
         "FieldName": "level-name",
         "InputType": "text",
@@ -179,7 +179,7 @@
     {
         "DisplayName": "Level Seed",
         "Category": "Server Properties",
-        "Description": "The seed the world will be generated upon",
+        "Description": "Use to randomize the world Allowed values: Any string",
         "Keywords": "seed level",
         "FieldName": "level-seed",
         "InputType": "text",
@@ -192,7 +192,7 @@
     {
         "DisplayName": "Default Player Permission level",
         "Category": "Server Properties",
-        "Description": "The level a new joining player starts with.",
+        "Description": "Permission level for new players joining for the first time.",
         "Keywords": "default player permission level visitor member operator ",
         "FieldName": "default-player-permission-level",
         "InputType": "enum",
@@ -209,7 +209,7 @@
     {
         "DisplayName": "Texture Pack Required",
         "Category": "Server Properties",
-        "Description": "Is a texture pack required to play on this server",
+        "Description": "Force clients to use texture packs in the current world",
         "Keywords": "",
         "FieldName": "texturepack-required",
         "InputType": "checkbox",
@@ -225,7 +225,7 @@
     {
         "DisplayName": "Max Threads",
         "Category": "Server Properties",
-        "Description": "The maximum amount of threads allowed",
+        "Description": "Maximum number of threads the server will try to use. If set to 0 or removed then it will use as many as possible. Allowed values: Any positive integer.",
         "Keywords": "max threads limit cpu",
         "FieldName": "max-threads",
         "InputType": "number",
@@ -238,7 +238,7 @@
     {
         "DisplayName": "Content Log File Enabled",
         "Category": "Server Properties",
-        "Description": "Should the content be logged to a file",
+        "Description": "Enables logging content errors to a file",
         "Keywords": "content log file enabled",
         "FieldName": "content-log-file-enabled",
         "InputType": "checkbox",
@@ -252,9 +252,22 @@
         }
     },
     {
+        "DisplayName": "Compression Threshold",
+        "Category": "Server Properties",
+        "Description": "Determines the smallest size of raw network payload to compress. Allowed values: 0-65535",
+        "Keywords": "compression threshold network ",
+        "FieldName": "compression-threshold",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "compression-threshold",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Server Authoritative Movement",
         "Category": "Server Properties",
-        "Description": "",
+        "Description": "Enables server authoritative movement. If 'server-auth', the server will replay local user input on the server and send down corrections when the client's position doesn't match the server's. If 'server-auth-with-rewind' is enabled and the server sends a correction, the clients will be instructed to rewind time back to the correction time, apply the correction, then replay all the player's inputs since then. This results in smoother and more frequent corrections. Corrections will only happen if correct-player-movement is set to true.",
         "Keywords": "server authoritative movement auth server-auth rewind",
         "FieldName": "server-authoritative-movement",
         "InputType": "enum",
@@ -284,7 +297,7 @@
     {
         "DisplayName": "Player Movement Action Direction Threshold",
         "Category": "Server Properties",
-        "Description": "The amount that the player's attack direction and look direction can differ.",
+        "Description": "The amount that the player's attack direction and look direction can differ. Allowed values: Any value in the range of [0, 1] where 1 means that the direction of the players view and the direction the player is attacking must match exactly and a value of 0 means that the two directions can differ by up to and including 90 degrees.",
         "Keywords": "player movement action direction threshold",
         "FieldName": "player-movement-action-direction-threshold",
         "InputType": "number",
@@ -310,7 +323,7 @@
     {
         "DisplayName": "Player Movement Distance Threshold in milliseconds",
         "Category": "Server Properties",
-        "Description": "The difference between server and client positions that needs to be exceeded before abnormal behavior is detected.",
+        "Description": "The duration of time the server and client positions can be out of sync (as defined by player-movement-distance-threshold) before the abnormal movement score is incremented. This value is defined in milliseconds. Disabled by server-authoritative-movement.",
         "Keywords": "player movement action direction threshold ms",
         "FieldName": "player-movement-distance-threshold-in-ms",
         "InputType": "number",
@@ -323,7 +336,7 @@
     {
         "DisplayName": "Correct Player Movement",
         "Category": "Server Properties",
-        "Description": "Should the movement of the player be corrected.",
+        "Description": "If true, the client position will get corrected to the server position if the movement score exceeds the threshold.",
         "Keywords": "correct player movement",
         "FieldName": "correct-player-movement",
         "InputType": "checkbox",
@@ -339,7 +352,7 @@
     {
         "DisplayName": "server-authoritative-block-breaking",
         "Category": "Server Properties",
-        "Description": "Should the server calculate when blocks should be broken",
+        "Description": "If true, the server will compute block mining operations in sync with the client so it can verify that the client should be able to break blocks when it thinks it can.",
         "Keywords": "server authoritative block breaking",
         "FieldName": "server-authoritative-block-breaking",
         "InputType": "checkbox",
