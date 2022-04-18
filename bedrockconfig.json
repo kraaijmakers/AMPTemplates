@@ -234,5 +234,122 @@
         "IncludeInCommandLine": false,
         "DefaultValue": "8",
         "EnumValues": {}
+    },
+    {
+        "DisplayName": "Content Log File Enabled",
+        "Category": "Server Properties",
+        "Description": "Should the content be logged to a file",
+        "Keywords": "content log file enabled",
+        "FieldName": "content-log-file-enabled",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "content-log-file-enabled",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "Server Authoritative Movement",
+        "Category": "Server Properties",
+        "Description": "",
+        "Keywords": "server authoritative movement auth server-auth rewind",
+        "FieldName": "server-authoritative-movement",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "server-authoritative-movement",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "server-auth",
+        "EnumValues": {
+            "server-auth": "Server Authoritative",
+            "server-auth-with-rewind": "Server Authoritative with Rewind",
+            "client-auth": "Client Authoritative"
+        }
+    },
+    {
+        "DisplayName": "Player Movement Score Threshold",
+        "Category": "Server Properties",
+        "Description": "The number of incongruent time intervals needed before abnormal behavior is reported. Disabled by server-authoritative-movement",
+        "Keywords": "player movement score threshold",
+        "FieldName": "player-movement-score-threshold",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "player-movement-score-threshold",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "20",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Player Movement Action Direction Threshold",
+        "Category": "Server Properties",
+        "Description": "The amount that the player's attack direction and look direction can differ.",
+        "Keywords": "player movement action direction threshold",
+        "FieldName": "player-movement-action-direction-threshold",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "player-movement-action-direction-threshold",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0.85",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Player Movement Distance Threshold",
+        "Category": "Server Properties",
+        "Description": "The difference between server and client positions that needs to be exceeded before abnormal behavior is detected.",
+        "Keywords": "player movement distance threshold",
+        "FieldName": "player-movement-distance-threshold",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "player-movement-distance-threshold",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0.3",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Player Movement Distance Threshold in milliseconds",
+        "Category": "Server Properties",
+        "Description": "The difference between server and client positions that needs to be exceeded before abnormal behavior is detected.",
+        "Keywords": "player movement action direction threshold ms",
+        "FieldName": "player-movement-distance-threshold-in-ms",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "player-movement-duration-threshold-in-ms",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "500",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Correct Player Movement",
+        "Category": "Server Properties",
+        "Description": "Should the movement of the player be corrected.",
+        "Keywords": "correct player movement",
+        "FieldName": "correct-player-movement",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "correct-player-movement",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
+    },
+    {
+        "DisplayName": "server-authoritative-block-breaking",
+        "Category": "Server Properties",
+        "Description": "Should the server calculate when blocks should be broken",
+        "Keywords": "server authoritative block breaking",
+        "FieldName": "server-authoritative-block-breaking",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "server-authoritative-block-breaking",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "true": "True",
+            "false": "False"
+        }
     }
 ]
