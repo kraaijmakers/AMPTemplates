@@ -13,6 +13,7 @@ App.ExecutableLinux=bedrock_server
 App.ExecutableWin=bedrock_server.exe
 App.ExitMethod=String
 App.ExitString=stop
+App.MaxUsers=10
 App.HasReadableConsole=true
 App.HasWritableConsole=true
 App.RapidStartup=false
