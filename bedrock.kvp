@@ -1,9 +1,11 @@
 App.AdminMethod=STDIO
 App.ApplicationPort1=19132
 App.ApplicationPort2=19133
+App.ApplicationPort3=0
+App.RemoteAdminPort=0
 App.ApplicationReadyMode=RegexMatch
 App.BaseDirectory=./bedrock/
-App.CommandLineArgs=
+App.CommandLineArgs= 
 App.CommandLineParameterDelimiter= 
 App.CommandLineParameterFormat=
 App.DisplayName=Bedrock
